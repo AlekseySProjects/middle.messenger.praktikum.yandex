@@ -4,7 +4,8 @@
   "description": "attempt to create something big",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,10 @@
     "parcel": "^2.8.3",
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1",
-    "stylelint-config-standard-scss": "^7.0.1"
+    "stylelint-config-standard-scss": "^7.0.1",
+    "express": "^4.18.2"
+  },
+  "engines" : {
+    "node" : ">=12.0.0"
   }
 }
