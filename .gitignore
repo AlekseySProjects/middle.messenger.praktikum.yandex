@@ -7,3 +7,5 @@ Icon?
 node_modules
 .vscode
 dist
+# Local Netlify folder
+.netlify
