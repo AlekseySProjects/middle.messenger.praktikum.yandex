@@ -2,7 +2,7 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "attempt to create something big",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "start": "node index.js",

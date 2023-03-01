@@ -5,7 +5,7 @@ ehthumbs.db
 Icon?
 
 node_modules
-.vscode
 dist
-# Local Netlify folder
 .netlify
+.parcel-cache
+.vscode
