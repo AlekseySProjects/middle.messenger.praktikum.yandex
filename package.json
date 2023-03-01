@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/AlekseySProjects/ya-practicum-chat/issues"
   },
-  "homepage": "https://github.com/AlekseySProjects/ya-practicum-chat#readme"
+  "homepage": "https://github.com/AlekseySProjects/ya-practicum-chat#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-google": "^0.14.0",
+    "parcel": "^2.8.3",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1"
+  }
 }
