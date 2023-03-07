@@ -1,0 +1,12 @@
+<div class="form-row">
+    {{#>Label id='username'}}
+        {{>Input id='username' name='login' description='Имя пользователя' placeholder='Ваш логин'}}
+    {{/Label}}
+</div>
+<div class="form-row">
+    {{>Input id='password' name='password' description='Пароль' type='password' placeholder='Пароль'}}
+</div>
+<div class="form-row">
+    {{>Button text='Войти'}}
+</div>
+<a href="{{route 'home' target='_blank'}}">Домой</a>
