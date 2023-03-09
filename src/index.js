@@ -27,4 +27,3 @@ if (matchedRoute) {
 } else {
   // 404
 }
-

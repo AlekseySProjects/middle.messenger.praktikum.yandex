@@ -2,13 +2,14 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "attempt to create something big",
+  "source": ["src/index.html"],
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "dev": "parcel src/index.html -p 3000",
+    "dev": "parcel --open",
     "clean": "npx rimraf dist",
-    "build": "npm run clean && parcel build ./src/index.html --no-source-maps",
-    "watch": "parcel watch ./src/index.html --no-hmr"
+    "build": "npm run clean && parcel build --no-source-maps",
+    "watch": "parcel watch --no-hmr"
   },
   "targets": {
     "modern": {
@@ -16,9 +17,6 @@
         "browsers": ">= 5%"
       }
     }
-  },
-  "staticFiles": {
-    "distDir": "dist/assets"
   },
   "repository": {
     "type": "git",
