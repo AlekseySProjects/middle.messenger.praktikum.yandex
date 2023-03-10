@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 // eslint-disable-next-line new-cap
 const router = express.Router();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/dist'));
