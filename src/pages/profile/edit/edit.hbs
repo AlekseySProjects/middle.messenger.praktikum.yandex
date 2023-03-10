@@ -1,0 +1,17 @@
+<div class="page-wrapper centered-content">
+    <a href="{{route 'profile'}}" class="back-btn">Назад</a>
+    <main class="single-content-block single-block">
+        <div class="settings my-2">
+            <form action="">
+            {{#>userDataForm}}
+            <div class="form-row">
+                {{>Input id='display_name' value=display_name name='display_name' placeholder='Имя в чате'}}
+            </div>
+            {{/userDataForm}}
+            <div>
+                {{#>Button}}Сохранить{{/Button}}
+            </div>
+            </form>
+        </div>
+    </main>
+</div>

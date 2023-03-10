@@ -1,0 +1,7 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{ttf,woff,woff2}": ["parcel-transformer-fonts"],
+    "bundle-text:*": ["...", "@parcel/transformer-inline-string"]
+  }
+}

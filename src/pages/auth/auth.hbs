@@ -1,0 +1,21 @@
+<div class="page-wrapper">
+    <div class="centered-content">
+        <div class="form-wrapper single-form-block">
+        <a href="{{route 'home'}}">Главная страница</a>
+            <form action="">
+                <div class="form-row">
+                    {{>Input id='username' name='login' placeholder='Логин' required='required'}}
+                </div>
+                <div class="form-row">
+                    {{>Input id='password' name='password' type='password' placeholder='Пароль'}}
+                </div>
+                <div class="my-2">
+                    {{#>Button}}Войти{{/Button}}
+                </div>
+            </form>
+            <div class="text-center">
+                <a href="{{route 'reg' target='_blank'}}">Нет аккаунта?</a>
+            </div>
+        </div>
+    </div>
+</div>

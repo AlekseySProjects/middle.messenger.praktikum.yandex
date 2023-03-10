@@ -1,0 +1,16 @@
+<div class="page-wrapper">
+    <div class="content-with-navigation">
+        <aside class="aside">
+            <div class="settings">
+                {{>Avatar src=avatar}}
+                {{login}}
+                {{>Input type='search' placeholder='Кого ищем?'}}
+                <a href="{{route 'profile'}}">Профиль</a>
+            </div>
+            <div class="contacts-list"></div>
+        </aside>
+        <main class="main">
+            <a href="{{route 'auth'}}">Вход</a>
+        </main>
+    </div>
+</div>

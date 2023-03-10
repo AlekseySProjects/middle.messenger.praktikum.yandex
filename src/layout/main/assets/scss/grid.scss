@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.my-2 {
+    margin-top: $indent-size-2;
+    margin-bottom: $indent-size-2;
+}
+
+.my-3 {
+    margin-top: $indent-size-3;
+    margin-bottom: $indent-size-3;
+}
