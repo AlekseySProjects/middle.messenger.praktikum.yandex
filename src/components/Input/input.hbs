@@ -1,2 +1,14 @@
 {{ description }}
-<input {{#if id}}id="{{ id }}"{{/if}} name="{{ name }}" type="{{#if type}}{{type}}{{else}}text{{/if}}" placeholder="{{ placeholder }}">
+<input
+    {{#if id}}id="{{ id }}"{{/if}}
+    name="{{ name }}"
+    type="{{#if type}}{{type}}{{else}}text{{/if}}"
+    value="{{ value }}"
+    placeholder="{{ placeholder }}"
+    {{#if tabindex}}
+    tabindex={{tabindex}}
+    {{/if}}
+    {{#if autofocus}}
+    autofocus={{autofocus}}
+    {{/if}}
+>

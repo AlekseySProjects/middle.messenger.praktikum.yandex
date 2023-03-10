@@ -2,6 +2,7 @@ import Route from './route';
 
 /* Ведется запись в два объекта для быстрого поиска по ключу */
 /* TODO History API */
+/* TODO RouteGenerator to work with regexp */
 const keySlug = new Map();
 const keyName = new Map();
 
@@ -10,6 +11,12 @@ class Router {
     if (!route instanceof Route) {
       throw new Error(`Route instance expected.
       Please use Route class to add route`);
+    }
+    if (this._isRouteExistsByName(route.name)) {
+      throw new Error(`Route with name ${route.name} already exists`);
+    }
+    if (this._isRouteExistsBySlug(route.slug)) {
+      throw new Error(`Route with slug ${route.slug} already exists`);
     }
     keyName.set(route.name, route);
     keySlug.set(route.slug, route);
@@ -25,10 +32,7 @@ class Router {
   }
 
   getRoute(string, key = 'slug') {
-    if (key === 'name') {
-      return keyName.get(string);
-    }
-    return keySlug.get(string);
+    return (key === 'name') ? keyName.get(string) : keySlug.get(string);
   }
 
   getRouteBySlug(string) {
@@ -53,10 +57,9 @@ class Router {
   };
 
   hasRoute(string, key = 'slug') {
-    if (key === 'name') {
-      return this._isRouteExistsByName(string);
-    }
-    return this._isRouteExistsBySlug(string);
+    return (key === 'name') ?
+      this._isRouteExistsByName(string) :
+      this._isRouteExistsBySlug(string);
   }
 }
 

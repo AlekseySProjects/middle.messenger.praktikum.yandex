@@ -1,7 +1,20 @@
-<form action="">
-    <div class="form-row">
-        {{#>Label id='first_name'}}
-            {{>Input id='username' name='login' description='Имя пользователя' placeholder='Ваш логин'}}
-        {{/Label}}
+<div class="centered-content">
+    <div class="form-wrapper single-form-block">
+        <form action="">
+            <h1>Регистрация</h1>
+            {{>userDataForm emptyContext}}
+            <div class="form-row">
+                {{>Input id='password' name='password' type='password' placeholder='Пароль'}}
+            </div>
+            <div class="form-row">
+                {{>Input id='password_confirm' name='password_confirm' type='password' placeholder='Пароль еще раз'}}
+            </div>
+            <div class="my-2">
+                {{#>Button}}Зарегистрироваться{{/Button}}
+            </div>
+        </form>
+        <div>
+        У меня есть аккаунт, <a href="{{route 'auth'}}">Войти</a>
+        </div>
     </div>
-</form>
+</div>

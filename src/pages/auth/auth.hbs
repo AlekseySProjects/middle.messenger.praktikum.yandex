@@ -1,12 +1,21 @@
-<div class="form-row">
-    {{#>Label id='username'}}
-        {{>Input id='username' name='login' description='Имя пользователя' placeholder='Ваш логин'}}
-    {{/Label}}
+<div class="page-wrapper">
+    <div class="centered-content">
+        <div class="form-wrapper single-form-block">
+        <a href="{{route 'home'}}">Главная страница</a>
+            <form action="">
+                <div class="form-row">
+                    {{>Input id='username' name='login' placeholder='Логин' required='required'}}
+                </div>
+                <div class="form-row">
+                    {{>Input id='password' name='password' type='password' placeholder='Пароль'}}
+                </div>
+                <div class="my-2">
+                    {{#>Button}}Войти{{/Button}}
+                </div>
+            </form>
+            <div class="text-center">
+                <a href="{{route 'reg' target='_blank'}}">Нет аккаунта?</a>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="form-row">
-    {{>Input id='password' name='password' description='Пароль' type='password' placeholder='Пароль'}}
-</div>
-<div class="form-row">
-    {{>Button text='Войти'}}
-</div>
-<a href="{{route 'home' target='_blank'}}">Домой</a>

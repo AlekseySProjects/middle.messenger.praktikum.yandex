@@ -6,7 +6,6 @@ const template = Handlebars.compile(templateString);
 
 const defaultOptions = {
   type: 'button',
-  text: 'Отправить',
 };
 
 const Button = function(...args) {

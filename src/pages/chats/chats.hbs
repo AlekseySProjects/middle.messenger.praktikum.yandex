@@ -1,13 +1,16 @@
-<div>
-    Тут будет информация по чатам.
+<div class="page-wrapper">
+    <div class="content-with-navigation">
+        <aside class="aside">
+            <div class="settings">
+                {{>Avatar src=avatar}}
+                {{login}}
+                {{>Input type='search' placeholder='Кого ищем?'}}
+                <a href="{{route 'profile'}}">Профиль</a>
+            </div>
+            <div class="contacts-list"></div>
+        </aside>
+        <main class="main">
+            <a href="{{route 'auth'}}">Вход</a>
+        </main>
+    </div>
 </div>
-<div>
-    Разбивка на кучу модулей: settings, chatsList, chat
-</div>
-<div>
-    Еще нужно сделать страницу settings
-</div>
-<div>
-    Before every request I have to check authentication on client. If needed I should redirect to "/auth" url
-</div>
-<a href="{{route 'auth'}}">Авторизация</a>

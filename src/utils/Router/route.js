@@ -14,7 +14,7 @@ export default class Route {
     return this._name;
   }
 
-  set name(string) {
+  set name(string) { // может ли у маршрута динамически меняться name и slug?
     if (!isString(string)) {
       const givenType = typeof string;
       throw new Error(`String expected. ${givenType} given.
