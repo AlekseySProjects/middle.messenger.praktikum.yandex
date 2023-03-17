@@ -1,0 +1,39 @@
+<div class="page-wrapper centered-content">
+    <a href="{{route 'home'}}" class="back-btn">Назад</a>
+    <main class="single-content-block single-block">
+        <div>
+            {{>Avatar src=avatar}}
+        </div>
+        <div class="settings my-2">
+            <div class="settings__item">
+                <div class="settings__item__label">Почта</div>
+                <div class="settings__item__value">{{email}}</div>
+            </div>
+            <div class="settings__item">
+                <div class="settings__item__label">Логин</div>
+                <div class="settings__item__value">{{login}}</div>
+            </div>
+            <div class="settings__item">
+                <div class="settings__item__label">Имя</div>
+                <div class="settings__item__value">{{first_name}}</div>
+            </div>
+            <div class="settings__item">
+                <div class="settings__item__label">Фамилия</div>
+                <div class="settings__item__value">{{second_name}}</div>
+            </div>
+            <div class="settings__item">
+                <div class="settings__item__label">Имя в чате</div>
+                <div class="settings__item__value">{{display_name}}</div>
+            </div>
+            <div class="settings__item">
+                <div class="settings__item__label">Телефон</div>
+                <div class="settings__item__value">{{phone}}</div>
+            </div>
+        </div>
+        <div>
+            <div><a href="{{route 'profile-edit'}}">Изменить данные</a></div>
+            <div><a href="{{route 'change-pass'}}">Изменить пароль</a></div>
+            <div><a href="{{route 'logout'}}">Выйти</a></div>
+        </div>
+    </main>
+</div>

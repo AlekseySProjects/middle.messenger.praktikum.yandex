@@ -1,0 +1,8 @@
+@import '/src/layout/main/assets/scss/variables.scss';
+
+.settings__item {
+    display: flex;
+    justify-content: space-between;
+    padding: .25em 0;
+    border-bottom: 1px solid #eee;
+}

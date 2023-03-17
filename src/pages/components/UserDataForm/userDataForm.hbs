@@ -1,0 +1,18 @@
+<div class="form-row">
+    {{>Input id='email' value=email name='email' type='email' placeholder='Email' tabindex='1' autofocus='autofocus'}}
+</div>
+<div class="form-row">
+    {{>Input id='login' value=login name='login' placeholder='Логин'}}
+</div>
+<div class="form-row">
+    {{>Input id='first_name' value=first_name name='first_name' placeholder='Имя'}}
+</div>
+<div class="form-row">
+    {{>Input id='second_name' value=second_name name='second_name' placeholder='Фамилия'}}
+</div>
+<div class="form-row">
+    {{>Input id='phone' value=phone name='phone' placeholder='Телефон'}}
+</div>
+{{#if @partial-block}}
+   {{> @partial-block }}
+{{/if}}
