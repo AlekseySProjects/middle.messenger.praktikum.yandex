@@ -2,7 +2,9 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "attempt to create something big",
-  "source": ["src/index.html"],
+  "source": [
+    "src/index.html"
+  ],
   "scripts": {
     "test": "jest",
     "start": "node server.js",
